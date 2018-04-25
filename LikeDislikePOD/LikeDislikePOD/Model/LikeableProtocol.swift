@@ -28,7 +28,7 @@ protocol Likeable: Showable {
 	func dislike()
 }
 
-// MARK: Likeable extension to default implementation
+// MARK: Likeable extension to default implementations
 extension Likeable {
 	mutating func like() {
 		liked = true
