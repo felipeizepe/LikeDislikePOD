@@ -1,0 +1,6 @@
+framework module Pods_LikeDislikePODTests {
+  umbrella header "Pods-LikeDislikePODTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

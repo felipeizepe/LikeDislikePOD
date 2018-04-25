@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LikeView" customModule="LikeDislikePOD" customModuleProvider="target">
+            <connections>
+                <outlet property="dislikeButton" destination="PYA-uS-Bgr" id="M9C-5c-hDX"/>
+                <outlet property="imageView" destination="dHL-JF-L0d" id="WI2-uf-Fpt"/>
+                <outlet property="likeButton" destination="C3y-zR-htg" id="6N7-jy-nJO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="331" height="265"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dHL-JF-L0d">
+                    <rect key="frame" x="0.5" y="10" width="331" height="132.5"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C3y-zR-htg">
+                    <rect key="frame" x="20" y="152.5" width="33" height="34"/>
+                    <state key="normal" title="Like">
+                        <color key="titleColor" red="0.052212979792835804" green="0.63709677419354838" blue="0.085247893432240734" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PYA-uS-Bgr">
+                    <rect key="frame" x="258" y="152.5" width="53" height="34"/>
+                    <state key="normal" title="Dislike">
+                        <color key="titleColor" red="0.63709677419354838" green="0.21632874840828789" blue="0.15492307027082847" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="PYA-uS-Bgr" firstAttribute="top" secondItem="dHL-JF-L0d" secondAttribute="bottom" constant="10" id="WVa-JX-7Mn"/>
+                <constraint firstItem="C3y-zR-htg" firstAttribute="top" secondItem="dHL-JF-L0d" secondAttribute="bottom" constant="10" id="dt9-wj-STu"/>
+                <constraint firstItem="C3y-zR-htg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="ezp-2Z-flF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="PYA-uS-Bgr" secondAttribute="trailing" constant="20" id="hBX-Pi-DYe"/>
+                <constraint firstItem="dHL-JF-L0d" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="knA-3s-OQn"/>
+                <constraint firstItem="dHL-JF-L0d" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="mzO-jv-FPt"/>
+                <constraint firstItem="dHL-JF-L0d" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" multiplier="0.5" id="nEU-90-Ike"/>
+                <constraint firstItem="dHL-JF-L0d" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="rgg-2t-NFm"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="160.5" y="-190.5"/>
+        </view>
+    </objects>
+</document>
